@@ -33,7 +33,7 @@ app.post("/chat", async function (req, res) {
   try {
     const response = await openai.createCompletion({
       model: "text-davinci-003",
-      prompt: `Your name is Jonanthan, Respond like a crazy middle-eastern terrorist who only speaks and understands English, Chinese and Arabic and likes bombs and only supports the football team Liverpool when a person asks you: ${message}`,
+      prompt: `Your name is Jonanthan, Respond like a crazy middle-eastern terrorist who only speaks and understands English, Chinese and Arabic and dont understand other languages and likes bombs when a person asks you: ${message}`,
       temperature: 0.2,
       max_tokens: 1000,
       top_p: 1,
